@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D943105428B80C3C00F5A4F9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D943105328B80C3C00F5A4F9 /* Model.swift */; };
 		D9B21F8A28B7AA7200A2F11E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B21F8928B7AA7200A2F11E /* AppDelegate.swift */; };
 		D9B21F8C28B7AA7200A2F11E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B21F8B28B7AA7200A2F11E /* SceneDelegate.swift */; };
 		D9B21F8E28B7AA7200A2F11E /* SettingsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B21F8D28B7AA7200A2F11E /* SettingsScreenViewController.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D943105328B80C3C00F5A4F9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		D9B21F8628B7AA7200A2F11E /* IphoneSettingsScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IphoneSettingsScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B21F8928B7AA7200A2F11E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9B21F8B28B7AA7200A2F11E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,8 +85,16 @@
 		D943105228B809CE00F5A4F9 /* CustomModule */ = {
 			isa = PBXGroup;
 			children = (
+				D943105328B80C3C00F5A4F9 /* Model.swift */,
 			);
 			path = CustomModule;
+			sourceTree = "<group>";
+		};
+		D943105528B9158D00F5A4F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D9B21F7D28B7AA7200A2F11E = {
@@ -106,6 +116,7 @@
 		D9B21F8828B7AA7200A2F11E /* IphoneSettingsScreen */ = {
 			isa = PBXGroup;
 			children = (
+				D943105528B9158D00F5A4F9 /* Extensions */,
 				D943104E28B8095600F5A4F9 /* Sources */,
 				D943104D28B8094C00F5A4F9 /* Resources */,
 			);
@@ -185,6 +196,7 @@
 				D9B21F8E28B7AA7200A2F11E /* SettingsScreenViewController.swift in Sources */,
 				D9B21F8A28B7AA7200A2F11E /* AppDelegate.swift in Sources */,
 				D9B21F8C28B7AA7200A2F11E /* SceneDelegate.swift in Sources */,
+				D943105428B80C3C00F5A4F9 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
