@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class DefaultTableViewCell: UITableViewCell {
 
@@ -45,11 +46,27 @@ class DefaultTableViewCell: UITableViewCell {
     }
 
     private func setupHierarchy() {
-
+        imageContainer.addSubview(iconImage)
+        addSubview(imageContainer)
+        addSubview(settingLabel)
     }
 
     private func setupLayout() {
+        iconImage.snp.makeConstraints {
+            $0.top.trailing.bottom.leading.equalTo(imageContainer)
+            $0.center.equalTo(imageContainer)
+        }
 
+        imageContainer.snp.makeConstraints {
+            $0.top.leading.bottom.equalTo(contentView).offset(10)
+            $0.centerY.equalTo(contentView)
+            $0.height.width.equalTo(60)
+        }
+
+        settingLabel.snp.makeConstraints {
+            $0.centerY.equalTo(imageContainer)
+            $0.leading.equalTo(imageContainer.snp.trailing).offset(20)
+        }
     }
 
 }
