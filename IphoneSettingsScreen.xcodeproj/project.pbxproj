@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D943105428B80C3C00F5A4F9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D943105328B80C3C00F5A4F9 /* Model.swift */; };
+		D943105928B94FDA00F5A4F9 /* DefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D943105828B94FDA00F5A4F9 /* DefaultTableViewCell.swift */; };
 		D9B21F8A28B7AA7200A2F11E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B21F8928B7AA7200A2F11E /* AppDelegate.swift */; };
 		D9B21F8C28B7AA7200A2F11E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B21F8B28B7AA7200A2F11E /* SceneDelegate.swift */; };
 		D9B21F8E28B7AA7200A2F11E /* SettingsScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B21F8D28B7AA7200A2F11E /* SettingsScreenViewController.swift */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		D943105328B80C3C00F5A4F9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D943105828B94FDA00F5A4F9 /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
 		D9B21F8628B7AA7200A2F11E /* IphoneSettingsScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IphoneSettingsScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B21F8928B7AA7200A2F11E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9B21F8B28B7AA7200A2F11E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				D943105328B80C3C00F5A4F9 /* Model.swift */,
+				D943105828B94FDA00F5A4F9 /* DefaultTableViewCell.swift */,
 			);
 			path = CustomModule;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D943105928B94FDA00F5A4F9 /* DefaultTableViewCell.swift in Sources */,
 				D9B21F8E28B7AA7200A2F11E /* SettingsScreenViewController.swift in Sources */,
 				D9B21F8A28B7AA7200A2F11E /* AppDelegate.swift in Sources */,
 				D9B21F8C28B7AA7200A2F11E /* SceneDelegate.swift in Sources */,
