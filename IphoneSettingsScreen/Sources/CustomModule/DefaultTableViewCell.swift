@@ -18,7 +18,7 @@ class DefaultTableViewCell: UITableViewCell {
         }
     }
 
-    private lazy var iconImage: UIImageView = {
+    lazy var iconImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
         imageView.tintColor = .white
@@ -26,13 +26,13 @@ class DefaultTableViewCell: UITableViewCell {
         return imageView
     }()
 
-    private lazy var backIconImage: UIView = {
+    lazy var backIconImage: UIView = {
         let view = UIImageView()
         view.layer.cornerRadius = 8
         return view
     }()
 
-    private lazy var settingLabel: UILabel = {
+    lazy var settingLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 18)
         return label
