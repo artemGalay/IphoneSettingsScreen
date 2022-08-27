@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension SettingsViewController: UITableViewDataSource {
+extension SettingsViewController: UITableViewDataSource, UITableViewDelegate{
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return ContentSections.contentSections.count
@@ -35,10 +35,19 @@ extension SettingsViewController: UITableViewDataSource {
         case .switchCell:
             let switchCell = tableView.dequeueReusableCell(withIdentifier: "SwitchTableViewCell", for: indexPath) as? SwitchTableViewCell
             switchCell?.contents = ContentSections.contentSections[indexPath.section].settingCellItem[indexPath.row]
+            switchCell?.selectionStyle = .none
             return switchCell ?? UITableViewCell()
         case .imageCell:
             return UITableViewCell()
         }
     }
-}
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if ContentSections.contentSections[indexPath.section].settingCellItem[indexPath.row].typeCell != .switchCell {
+            let viewController = DetailViewController()
+            tableView.deselectRow(at: indexPath, animated: true)
+            viewController.contents = ContentSections.contentSections[indexPath.section].settingCellItem[indexPath.row]
+            navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+}
