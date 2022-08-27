@@ -18,10 +18,38 @@ extension SettingsViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DefaultTableViewCell", for: indexPath) as? DefaultTableViewCell
-        cell?.contents = ContentSections.contentSections[indexPath.section].settingCellItem[indexPath.row]
-        cell?.accessoryType = .disclosureIndicator
-        return cell ?? UITableViewCell()
+
+        let content = ContentSections.contentSections[indexPath.section].settingCellItem[indexPath.row]
+
+        switch content.typeCell {
+        case .defaultCell:
+            let defaultCell = tableView.dequeueReusableCell(withIdentifier: "DefaultTableViewCell", for: indexPath) as? DefaultTableViewCell
+            defaultCell?.contents = ContentSections.contentSections[indexPath.section].settingCellItem[indexPath.row]
+            defaultCell?.accessoryType = .disclosureIndicator
+            return defaultCell ?? UITableViewCell()
+        case .labelCell:
+            let labelCell = tableView.dequeueReusableCell(withIdentifier: "LabelTableViewCell", for: indexPath) as? LabelTableViewCell
+            labelCell?.contents = ContentSections.contentSections[indexPath.section].settingCellItem[indexPath.row]
+            labelCell?.accessoryType = .disclosureIndicator
+            return labelCell ?? UITableViewCell()
+        case .switchCell:
+            return UITableViewCell()
+        case .imageCell:
+            return UITableViewCell()
+        }
+
+
+
+//
+//        let defaultCell = tableView.dequeueReusableCell(withIdentifier: "DefaultTableViewCell", for: indexPath) as? DefaultTableViewCell
+//        defaultCell?.contents = ContentSections.contentSections[indexPath.section].settingCellItem[indexPath.row]
+//        defaultCell?.accessoryType = .disclosureIndicator
+//        return defaultCell ?? UITableViewCell()
+//
+//        let labelCell = tableView.dequeueReusableCell(withIdentifier: "LabelTableViewCell", for: indexPath) as? LabelTableViewCell
+//        labelCell?.contents = ContentSections.contentSections[indexPath.section].settingCellItem[indexPath.row]
+//        labelCell?.accessoryType = .disclosureIndicator
+//        return labelCell ?? UITableViewCell()
     }
 }
 
