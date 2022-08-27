@@ -71,5 +71,4 @@ class DefaultTableViewCell: UITableViewCell {
             $0.leading.equalTo(backIconImage.snp.trailing).offset(20)
         }
     }
-
 }

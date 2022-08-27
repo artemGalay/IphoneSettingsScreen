@@ -12,6 +12,7 @@
 		D943105C28B953A900F5A4F9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D943105B28B953A900F5A4F9 /* SnapKit */; };
 		D943105E28B983B800F5A4F9 /* SettingsViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D943105D28B983B800F5A4F9 /* SettingsViewController + Extensions.swift */; };
 		D943106028BA25C700F5A4F9 /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D943105F28BA25C700F5A4F9 /* LabelTableViewCell.swift */; };
+		D943106228BA38F700F5A4F9 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D943106128BA38F700F5A4F9 /* SwitchTableViewCell.swift */; };
 		D9B21F8A28B7AA7200A2F11E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B21F8928B7AA7200A2F11E /* AppDelegate.swift */; };
 		D9B21F8C28B7AA7200A2F11E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B21F8B28B7AA7200A2F11E /* SceneDelegate.swift */; };
 		D9B21F8E28B7AA7200A2F11E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B21F8D28B7AA7200A2F11E /* SettingsViewController.swift */; };
@@ -24,6 +25,7 @@
 		D943105828B94FDA00F5A4F9 /* DefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTableViewCell.swift; sourceTree = "<group>"; };
 		D943105D28B983B800F5A4F9 /* SettingsViewController + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsViewController + Extensions.swift"; sourceTree = "<group>"; };
 		D943105F28BA25C700F5A4F9 /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
+		D943106128BA38F700F5A4F9 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		D9B21F8628B7AA7200A2F11E /* IphoneSettingsScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IphoneSettingsScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B21F8928B7AA7200A2F11E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9B21F8B28B7AA7200A2F11E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				D943105328B80C3C00F5A4F9 /* Model.swift */,
 				D943105828B94FDA00F5A4F9 /* DefaultTableViewCell.swift */,
 				D943105F28BA25C700F5A4F9 /* LabelTableViewCell.swift */,
+				D943106128BA38F700F5A4F9 /* SwitchTableViewCell.swift */,
 			);
 			path = CustomModule;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D943105928B94FDA00F5A4F9 /* DefaultTableViewCell.swift in Sources */,
+				D943106228BA38F700F5A4F9 /* SwitchTableViewCell.swift in Sources */,
 				D9B21F8E28B7AA7200A2F11E /* SettingsViewController.swift in Sources */,
 				D9B21F8A28B7AA7200A2F11E /* AppDelegate.swift in Sources */,
 				D9B21F8C28B7AA7200A2F11E /* SceneDelegate.swift in Sources */,
