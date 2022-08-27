@@ -37,7 +37,7 @@ extension ContentSections {
                                          settingLabel: "Авиарежим",
                                          settingSwitch: true,
                                          typeCell: .switchCell),
-                             SettingCell(icon: UIImage(systemName: "wifi")!,
+                             SettingCell(icon: UIImage(named: "btuetooth")!,
                                          backgroundcolorIcon: .systemBlue,
                                          settingLabel: "Wi-fi",
                                          additionalLabel: "Не подключено",
@@ -59,7 +59,7 @@ extension ContentSections {
                                          backgroundcolorIcon: .systemBlue,
                                          settingLabel: "VPN",
                                          settingSwitch: true,
-                                         typeCell: .defaultCell)]),
+                                         typeCell: .switchCell)]),
 
         ContentSections(sectionsNumber: 1, settingCellItem:
                             [SettingCell(icon: UIImage(systemName: "bell.badge.fill")!,

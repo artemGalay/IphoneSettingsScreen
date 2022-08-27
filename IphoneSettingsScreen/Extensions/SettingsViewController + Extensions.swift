@@ -33,23 +33,12 @@ extension SettingsViewController: UITableViewDataSource {
             labelCell?.accessoryType = .disclosureIndicator
             return labelCell ?? UITableViewCell()
         case .switchCell:
-            return UITableViewCell()
+            let switchCell = tableView.dequeueReusableCell(withIdentifier: "SwitchTableViewCell", for: indexPath) as? SwitchTableViewCell
+            switchCell?.contents = ContentSections.contentSections[indexPath.section].settingCellItem[indexPath.row]
+            return switchCell ?? UITableViewCell()
         case .imageCell:
             return UITableViewCell()
         }
-
-
-
-//
-//        let defaultCell = tableView.dequeueReusableCell(withIdentifier: "DefaultTableViewCell", for: indexPath) as? DefaultTableViewCell
-//        defaultCell?.contents = ContentSections.contentSections[indexPath.section].settingCellItem[indexPath.row]
-//        defaultCell?.accessoryType = .disclosureIndicator
-//        return defaultCell ?? UITableViewCell()
-//
-//        let labelCell = tableView.dequeueReusableCell(withIdentifier: "LabelTableViewCell", for: indexPath) as? LabelTableViewCell
-//        labelCell?.contents = ContentSections.contentSections[indexPath.section].settingCellItem[indexPath.row]
-//        labelCell?.accessoryType = .disclosureIndicator
-//        return labelCell ?? UITableViewCell()
     }
 }
 

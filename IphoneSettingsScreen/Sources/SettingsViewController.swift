@@ -15,7 +15,7 @@ class SettingsViewController: UIViewController {
         let tableView = UITableView(frame: .zero, style: .grouped)
         tableView.register(DefaultTableViewCell.self, forCellReuseIdentifier: "DefaultTableViewCell")
         tableView.register(LabelTableViewCell.self, forCellReuseIdentifier: "LabelTableViewCell")
-//        tableView.register(SwitchCell.self, forCellReuseIdentifier: "SwitchCell")
+        tableView.register(SwitchTableViewCell.self, forCellReuseIdentifier: "SwitchTableViewCell")
         tableView.dataSource = self
 //        tableView.delegate = self
         return tableView

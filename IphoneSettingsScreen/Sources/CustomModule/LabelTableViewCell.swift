@@ -41,7 +41,7 @@ class LabelTableViewCell: DefaultTableViewCell {
     private func setupLayout() {
         rightLabel.snp.makeConstraints {
             $0.centerY.equalTo(settingLabel)
-            $0.trailing.equalToSuperview().offset(-50)
+            $0.trailing.equalToSuperview().offset(-35)
         }
     }
 }
