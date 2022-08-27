@@ -37,7 +37,7 @@ extension ContentSections {
                                          settingLabel: "Авиарежим",
                                          settingSwitch: true,
                                          typeCell: .switchCell),
-                             SettingCell(icon: UIImage(named: "btuetooth")!,
+                             SettingCell(icon: UIImage(systemName: "wifi")!,
                                          backgroundcolorIcon: .systemBlue,
                                          settingLabel: "Wi-fi",
                                          additionalLabel: "Не подключено",

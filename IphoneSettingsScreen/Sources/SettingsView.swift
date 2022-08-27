@@ -17,7 +17,7 @@ class SettingsViewController: UIViewController {
         tableView.register(LabelTableViewCell.self, forCellReuseIdentifier: "LabelTableViewCell")
         tableView.register(SwitchTableViewCell.self, forCellReuseIdentifier: "SwitchTableViewCell")
         tableView.dataSource = self
-//        tableView.delegate = self
+        tableView.delegate = self
         return tableView
     }()
 
