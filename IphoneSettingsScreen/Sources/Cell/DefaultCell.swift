@@ -62,7 +62,7 @@ class DefaultTableViewCell: UITableViewCell {
 
     private func setupLayout() {
         backIconImage.snp.makeConstraints {
-            $0.leading.equalToSuperview().offset(30)
+            $0.leading.equalToSuperview().offset(20)
             $0.centerY.equalToSuperview()
             $0.width.height.equalTo(35)
         }
