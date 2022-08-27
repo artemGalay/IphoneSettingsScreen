@@ -16,10 +16,11 @@ class SettingsViewController: UIViewController {
         tableView.register(DefaultTableViewCell.self, forCellReuseIdentifier: "DefaultTableViewCell")
         tableView.register(LabelTableViewCell.self, forCellReuseIdentifier: "LabelTableViewCell")
         tableView.register(SwitchTableViewCell.self, forCellReuseIdentifier: "SwitchTableViewCell")
+        tableView.register(NotifyImageTableViewCell.self, forCellReuseIdentifier: "NotifyImageTableViewCell")
         tableView.dataSource = self
         tableView.delegate = self
         return tableView
-    }()
+    } ()
 
     override func viewDidLoad() {
         super.viewDidLoad()

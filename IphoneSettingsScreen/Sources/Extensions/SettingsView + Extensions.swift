@@ -38,7 +38,10 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate{
             switchCell?.selectionStyle = .none
             return switchCell ?? UITableViewCell()
         case .imageCell:
-            return UITableViewCell()
+            let imageCell = tableView.dequeueReusableCell(withIdentifier: "NotifyImageTableViewCell", for: indexPath) as? NotifyImageTableViewCell
+            imageCell?.contents = ContentSections.contentSections[indexPath.section].settingCellItem[indexPath.row]
+            imageCell?.accessoryType = .disclosureIndicator
+            return imageCell ?? UITableViewCell()
         }
     }
 

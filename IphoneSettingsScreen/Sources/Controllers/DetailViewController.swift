@@ -18,14 +18,14 @@ final class DetailViewController: UIViewController {
         imageView.layer.masksToBounds = true
         imageView.tintColor = .white
         return imageView
-    }()
+    } ()
 
     private lazy var label: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         label.textColor = .white
         return label
-    }()
+    } ()
 
     // MARK: - Lifecycle
 

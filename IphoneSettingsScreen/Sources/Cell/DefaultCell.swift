@@ -24,19 +24,19 @@ class DefaultTableViewCell: UITableViewCell {
         imageView.tintColor = .white
         imageView.clipsToBounds = true
         return imageView
-    }()
+    } ()
 
     lazy var backIconImage: UIView = {
         let view = UIImageView()
         view.layer.cornerRadius = 8
         return view
-    }()
+    } ()
 
     lazy var settingLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 18)
         return label
-    }()
+    } ()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

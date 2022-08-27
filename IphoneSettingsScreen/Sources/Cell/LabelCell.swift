@@ -11,9 +11,6 @@ class LabelTableViewCell: DefaultTableViewCell {
 
     override var contents: SettingCell? {
         didSet {
-            iconImage.image = contents?.icon
-            settingLabel.text = contents?.settingLabel
-            backIconImage.backgroundColor = contents?.backgroundcolorIcon
             rightLabel.text = contents?.additionalLabel
         }
     }
@@ -22,7 +19,7 @@ class LabelTableViewCell: DefaultTableViewCell {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 18)
         return label
-    }()
+    } ()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
