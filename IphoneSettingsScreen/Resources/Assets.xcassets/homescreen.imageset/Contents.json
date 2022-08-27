@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "btuetooth.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "btuetooth-1.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "btuetooth-2.jpg",
+      "filename" : "homescreen.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

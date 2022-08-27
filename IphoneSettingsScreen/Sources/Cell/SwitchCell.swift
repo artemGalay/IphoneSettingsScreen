@@ -14,7 +14,7 @@ class SwitchTableViewCell: DefaultTableViewCell {
         mySwitch.isOn = false
         mySwitch.addTarget(self, action: #selector(tapSwitch), for: .valueChanged)
         return mySwitch
-    }()
+    } ()
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

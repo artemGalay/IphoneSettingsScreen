@@ -25,13 +25,12 @@ struct SettingCell: Hashable {
 }
 
 struct ContentSections {
-    var sectionsNumber: Int
     var settingCellItem: [SettingCell]
 }
 
 extension ContentSections {
     static var contentSections: [ContentSections] = [
-        ContentSections(sectionsNumber: 0, settingCellItem:
+        ContentSections(settingCellItem:
                             [SettingCell(icon: UIImage(systemName: "airplane")!,
                                          backgroundcolorIcon: .systemOrange,
                                          settingLabel: "Авиарежим",
@@ -42,7 +41,7 @@ extension ContentSections {
                                          settingLabel: "Wi-fi",
                                          additionalLabel: "Не подключено",
                                          typeCell: .labelCell),
-                             SettingCell(icon: UIImage(systemName: "wifi")!,
+                             SettingCell(icon: UIImage(named: "bluetooth")!,
                                          backgroundcolorIcon: .systemBlue,
                                          settingLabel: "Bluetooth",
                                          additionalLabel: "Вкл.",
@@ -55,13 +54,13 @@ extension ContentSections {
                                          backgroundcolorIcon: .systemGreen,
                                          settingLabel: "Режим модема",
                                          typeCell: .defaultCell),
-                             SettingCell(icon: UIImage(systemName: "wifi")!,
+                             SettingCell(icon: UIImage(named: "vpn")!,
                                          backgroundcolorIcon: .systemBlue,
                                          settingLabel: "VPN",
                                          settingSwitch: true,
                                          typeCell: .switchCell)]),
 
-        ContentSections(sectionsNumber: 1, settingCellItem:
+        ContentSections(settingCellItem:
                             [SettingCell(icon: UIImage(systemName: "bell.badge.fill")!,
                                           backgroundcolorIcon: .systemRed,
                                           settingLabel: "Уведомления",
@@ -79,11 +78,12 @@ extension ContentSections {
                                           settingLabel: "Экранное время",
                                           typeCell: .defaultCell)]),
 
-        ContentSections(sectionsNumber: 2, settingCellItem:
-                            [SettingCell(icon: UIImage(systemName: "speaker.wave.3.fill")!,
-                                        backgroundcolorIcon: .systemGray,
-                                        settingLabel: "Основные",
-                                        typeCell: .defaultCell),
+        ContentSections(settingCellItem:
+                            [SettingCell(icon: UIImage(systemName: "gear")!,
+                                         backgroundcolorIcon: .systemGray,
+                                         settingLabel: "Основные",
+                                         notifyIcon: UIImage(systemName: "1.circle.fill"),
+                                         typeCell: .imageCell),
                             SettingCell(icon: UIImage(systemName: "switch.2")!,
                                          backgroundcolorIcon: .systemGray,
                                          settingLabel: "Пункт управления",
@@ -92,29 +92,29 @@ extension ContentSections {
                                          backgroundcolorIcon: .systemBlue,
                                          settingLabel: "Экран и яркость",
                                          typeCell: .defaultCell),
-                             SettingCell(icon: UIImage(systemName: "wifi")!,
+                             SettingCell(icon: UIImage(named: "homescreen")!,
                                          backgroundcolorIcon: .blue,
-                                         settingLabel: "Экран <<Домой>>",
+                                         settingLabel: "Экран «Домой»",
                                          typeCell: .defaultCell),
-                             SettingCell(icon: UIImage(systemName: "wifi")!,
+                             SettingCell(icon: UIImage(named: "accessibility")!,
                                          backgroundcolorIcon: .systemBlue,
                                          settingLabel: "Универсальный доступ",
                                          typeCell: .defaultCell),
                              SettingCell(icon: UIImage(systemName: "circle.hexagongrid.circle")!,
-                                          backgroundcolorIcon: .systemGray,
-                                          settingLabel: "Обои",
-                                          typeCell: .defaultCell),
-                              SettingCell(icon: UIImage(systemName: "globe.asia.australia.fill")!,
-                                          backgroundcolorIcon: .systemRed,
-                                          settingLabel: "Siri и Поиск",
-                                          typeCell: .defaultCell),
-                              SettingCell(icon: UIImage(systemName: "faceid")!,
-                                          backgroundcolorIcon: .systemGreen,
-                                          settingLabel: "Face ID и код-пароль",
-                                          typeCell: .defaultCell),
-                              SettingCell(icon: UIImage(systemName: "hourglass")!,
-                                          backgroundcolorIcon: .systemRed,
-                                          settingLabel: "Экстренный вызов - SOS",
-                                          typeCell: .defaultCell)]),
+                                         backgroundcolorIcon: .systemGray,
+                                         settingLabel: "Обои",
+                                         typeCell: .defaultCell),
+                             SettingCell(icon: UIImage(systemName: "globe.asia.australia.fill")!,
+                                         backgroundcolorIcon: .systemRed,
+                                         settingLabel: "Siri и Поиск",
+                                         typeCell: .defaultCell),
+                             SettingCell(icon: UIImage(systemName: "faceid")!,
+                                         backgroundcolorIcon: .systemGreen,
+                                         settingLabel: "Face ID и код-пароль",
+                                         typeCell: .defaultCell),
+                             SettingCell(icon: UIImage(systemName: "hourglass")!,
+                                         backgroundcolorIcon: .systemRed,
+                                         settingLabel: "Экстренный вызов - SOS",
+                                         typeCell: .defaultCell)]),
     ]
 }
