@@ -11,6 +11,8 @@ final class DetailViewController: UIViewController {
 
     var contents: SettingCell?
 
+    // MARK: - Outlets
+
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.clipsToBounds = true
