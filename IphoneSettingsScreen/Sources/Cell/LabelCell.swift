@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LabelTableViewCell: DefaultTableViewCell {
+final class LabelTableViewCell: DefaultTableViewCell {
 
     override var contents: SettingCell? {
         didSet {
@@ -15,11 +15,16 @@ class LabelTableViewCell: DefaultTableViewCell {
         }
     }
 
+    // MARK: - Outlets
+
     private lazy var rightLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 18)
+        label.textColor = .lightGray
         return label
     } ()
+
+    // MARK: - Initialisers
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -30,6 +35,8 @@ class LabelTableViewCell: DefaultTableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    // MARK: - Setup
 
     private func setupHierarchy() {
         addSubview(rightLabel)

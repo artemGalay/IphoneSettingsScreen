@@ -7,7 +7,9 @@
 
 import UIKit
 
-class SwitchTableViewCell: DefaultTableViewCell {
+final class SwitchTableViewCell: DefaultTableViewCell {
+
+    // MARK: - Outlets
 
     private lazy var mySwitch: UISwitch = {
         let mySwitch = UISwitch()
@@ -15,6 +17,8 @@ class SwitchTableViewCell: DefaultTableViewCell {
         mySwitch.addTarget(self, action: #selector(tapSwitch), for: .valueChanged)
         return mySwitch
     } ()
+
+    // MARK: - Initialisers
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -25,6 +29,8 @@ class SwitchTableViewCell: DefaultTableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    // MARK: - Setup
 
     private func setupHierarchy() {
         contentView.addSubview(mySwitch)
@@ -37,9 +43,11 @@ class SwitchTableViewCell: DefaultTableViewCell {
         }
     }
 
+    // MARK: - Actions
+
     @objc func tapSwitch(_ sender: UISwitch) {
         if sender.isOn {
-            print("Включён")
+            print("Включен")
         } else {
             print("Выключен")
         }

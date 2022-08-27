@@ -18,6 +18,8 @@ class DefaultTableViewCell: UITableViewCell {
         }
     }
 
+    // MARK: - Outlets
+
     lazy var iconImage: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
@@ -38,6 +40,8 @@ class DefaultTableViewCell: UITableViewCell {
         return label
     } ()
 
+    // MARK: - Initialisers
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupHierarchy()
@@ -48,6 +52,8 @@ class DefaultTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
+    // MARK: - Setup
+
     private func setupHierarchy() {
         addSubview(backIconImage)
         addSubview(iconImage)
@@ -55,7 +61,6 @@ class DefaultTableViewCell: UITableViewCell {
     }
 
     private func setupLayout() {
-
         backIconImage.snp.makeConstraints {
             $0.leading.equalToSuperview().offset(30)
             $0.centerY.equalToSuperview()
@@ -64,6 +69,7 @@ class DefaultTableViewCell: UITableViewCell {
         
         iconImage.snp.makeConstraints {
             $0.centerX.centerY.equalTo(backIconImage)
+            $0.size.equalTo(backIconImage).inset(4)
         }
 
         settingLabel.snp.makeConstraints {

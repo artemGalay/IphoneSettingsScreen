@@ -7,9 +7,11 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+final class SettingsViewController: UIViewController {
 
     private var contents: [ContentSections]?
+
+    // MARK: - Outlets
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
@@ -22,6 +24,8 @@ class SettingsViewController: UIViewController {
         return tableView
     } ()
 
+    // MARK: - Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -31,6 +35,8 @@ class SettingsViewController: UIViewController {
         setupHierarhy()
         setupLayout()
     }
+
+    // MARK: - Setup
 
     private func setupHierarhy() {
         view.addSubview(tableView)

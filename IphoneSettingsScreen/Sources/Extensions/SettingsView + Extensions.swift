@@ -51,6 +51,7 @@ extension SettingsViewController: UITableViewDataSource, UITableViewDelegate{
             tableView.deselectRow(at: indexPath, animated: true)
             viewController.contents = ContentSections.contentSections[indexPath.section].settingCellItem[indexPath.row]
             navigationController?.pushViewController(viewController, animated: true)
+            print("\(viewController.contents?.settingLabel ?? "")")
         }
     }
 }
